@@ -138,21 +138,15 @@ table {
 
 .project-tile{
 	background-color: var(--main-gray);
-	box-shadow: 1px 0px 1px 0px var(--main-gray)
+	box-shadow: 1px 0px 1px 0px var(--main-gray);
+	margin-bottom: 2.2rem;
+	display: block;
 	
 }
 
-.project-tile:hover{
-	animation-name: title-hover;
-}
-
-@keyframes title-hover {
-	
-	
-}
 
 .Projectcontainer{
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 }
 .projectHeader{
@@ -166,9 +160,15 @@ table {
 	margin: 0 auto 2.5rem auto;
 }
 .code{
-	color: orange;
-	display: hidden
+	color: var(--main-gray);
+transition: 0.3s color;
 }
+
+.project-tile:hover .code{
+	color: orange;
+	/* background:red; */
+}
+	
 .project-title{
 	background-color: var(--main-gray);
 	font-size: 1.1rem;
@@ -192,6 +192,7 @@ table {
 	background-color: var(--main-gray );
 	transition: background-color 0.3s ease-in ;
 	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .project-btn:hover{
@@ -335,5 +336,28 @@ width: 100%;
 .Welcome-title{
 	font-size: 3.5rem;
 }
+.project-tile{
+	font-size: 3.5rem;
+}
 
+.Projectcontainer{
+	/* margin-top: 2.2rem; */
+}
+}
+
+@media(min-width:550px) and (max-width:1000px){
+
+	.Projectcontainer{
+		width: 80%;
+		
+	}
+
+	.project-tile{
+
+		margin-top: 2.2rem;
+	}
+
+	.projects{
+		padding: 1.5rem 2.5rem;
+	}
 }
